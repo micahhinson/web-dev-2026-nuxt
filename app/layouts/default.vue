@@ -1,6 +1,9 @@
 <template>
    <UContainer>
       <!-- Header (nav)-->
+      <UHeader title="Micah Hinson">
+         <UNavigationMenu :items="items" variant="link" />
+      </UHeader>
       <slot/>
       <!-- Footer -->
        <UFooter>
@@ -29,7 +32,7 @@
 <script setup>
 const items = [
    {
-      label: "Home Page",
+      label: "Home",
       to: "/"
    },
    {
